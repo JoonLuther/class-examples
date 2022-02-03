@@ -19,6 +19,7 @@ void print(const char* prefix, struct studentT s) {
   printf("--------------------\n");
 }
 
+<<<<<<< HEAD
 void changeName(struct studentT* s, char* newName) {
   if (newName == NULL) {
     return;
@@ -28,6 +29,17 @@ void changeName(struct studentT* s, char* newName) {
 
 void changeGpa(struct studentT* s, float newGpa) {
   s->gpa = newGpa;
+=======
+void changeName(struct studentT s, char* newName) {
+  if (newName == NULL) {
+    return;
+  }
+  strcpy(s.name, newName);
+}
+
+void changeGpa(struct studentT s, float newGpa) {
+  s.gpa = newGpa;
+>>>>>>> 96f10abbca85925e2617842f4338dc7e72304d13
 }
 
 int main() {
@@ -46,4 +58,8 @@ int main() {
     print("AFTER CHANGE GPA", student1);
 
     return 0;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 96f10abbca85925e2617842f4338dc7e72304d13
